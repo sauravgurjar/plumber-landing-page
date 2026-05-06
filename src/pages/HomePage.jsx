@@ -173,14 +173,14 @@ export default function HomePage() {
                 Serving major metro areas across Canada
               </div>
             </div>
-            <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
-              <Button href={site.phoneHref} variant="dark" size="lg">
-                Call {site.phoneDisplay}
-              </Button>
-              <Button to="/contact?reason=quote" variant="secondary" size="lg" className="ring-white/20">
-                Get Free Quote
-              </Button>
-            </div>
+            <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+                <Button href={site.phoneHref} size="lg">
+                  Call Now
+                </Button>
+                <Button to="/contact?reason=quote" variant="secondary" size="lg">
+                  Get Free Quote
+                </Button>
+              </div>
           </div>
         </Container>
       </section>

@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
-
-export const fadeUp = {
-  hidden: { opacity: 0, y: 14 },
-  visible: { opacity: 1, y: 0 },
-};
+import { fadeUp } from "./motionVariants.js";
 
 export function MotionSection({ children, className = "", delay = 0 }) {
   return (
@@ -19,4 +15,3 @@ export function MotionSection({ children, className = "", delay = 0 }) {
     </motion.div>
   );
 }
-
